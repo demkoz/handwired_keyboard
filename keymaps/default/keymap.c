@@ -22,7 +22,6 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
         // Row 2: [2,0]..[2,14] (15)
         KC_TAB,  KC_Q,    KC_W,    KC_E,    KC_R,    KC_T,    KC_Y,    KC_U,    KC_I,    KC_O,    KC_P,    KC_LBRC, KC_RBRC, KC_BSLS, KC_PGUP,
 
-        // Ten wstawiony w JSON-ie klawisz: [5,6] (1)  -> na razie daję MENU
         KC_APP,
 
         // Row 3: [3,0]..[3,11], [3,13], [3,14] (14)
@@ -39,7 +38,7 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
         // Row 0
         _______, _______, _______, _______, _______, _______, _______, _______, _______, _______, _______, _______, _______, KC_SCRL, _______,
 
-        // Row 1: Fn + Del = bootloader (bo Del jest na [1,14])
+        // Row 1: Fn + Del = bootloader mode
         QK_BOOT, _______, _______, _______, _______, _______, _______, _______, _______, _______, _______, _______, _______, _______, _______,
 
         // Row 2
