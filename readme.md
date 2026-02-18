@@ -6,7 +6,7 @@
 A handwired QMK keyboard built with a simple row/column matrix (wires + diodes) and a microcontroller running QMK firmware.
 
 - Keyboard Maintainer: [Damian](https://github.com/demkoz)
-- Hardware Supported: Handwired matrix + a QMK-supported controller (fill in your exact controller below)
+- Hardware Supported: Handwired matrix + a QMK-supported controller RP2040-Zero
 - Hardware Availability: Handwired build (no PCB). Controller and parts can be sourced from common electronics/keyboard stores.
 
 ![damian1 keyboard](./images/IMG_5284.jpeg)
@@ -41,7 +41,7 @@ A handwired QMK keyboard built with a simple row/column matrix (wires + diodes) 
      - `rules.mk` (features, MCU settings)
      - `keymaps/default/keymap.c` (default keymap)
 
-## Hardware details (fill in)
+## Hardware details
 
 - Controller: *(RP2040)*
 - Diodes: *(1N4148)*
@@ -75,6 +75,7 @@ See the QMK docs for setup and build instructions:
     Make guide: https://docs.qmk.fm/#/getting_started_make_guide
 
     Newbs guide: https://docs.qmk.fm/#/newbs
+
 
 
 
