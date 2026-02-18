@@ -9,6 +9,8 @@ A handwired QMK keyboard built with a simple row/column matrix (wires + diodes) 
 - Hardware Supported: Handwired matrix + a QMK-supported controller (fill in your exact controller below)
 - Hardware Availability: Handwired build (no PCB). Controller and parts can be sourced from common electronics/keyboard stores.
 
+![damian1 keyboard](./images/IMG_5284.jpeg)
+
 ## Design
 
 - **Layout**: Custom layout designed from scratch (key positions, spacing, and overall arrangement).
@@ -73,5 +75,6 @@ See the QMK docs for setup and build instructions:
     Make guide: https://docs.qmk.fm/#/getting_started_make_guide
 
     Newbs guide: https://docs.qmk.fm/#/newbs
+
 
 
