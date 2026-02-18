@@ -1,27 +1,76 @@
 # handwired/damian1
 
-![handwired/damian1](imgur.com image replace me!)
+![damian1 keyboard](./images/IMG_5287.jpeg)
 
-*A short description of the keyboard/project*
 
-* Keyboard Maintainer: [Damian](https://github.com/demkoz)
-* Hardware Supported: *The PCBs, controllers supported*
-* Hardware Availability: *Links to where you can find this hardware*
+A handwired QMK keyboard built with a simple row/column matrix (wires + diodes) and a microcontroller running QMK firmware.
 
-Make example for this keyboard (after setting up your build environment):
+- Keyboard Maintainer: [Damian](https://github.com/demkoz)
+- Hardware Supported: Handwired matrix + a QMK-supported controller (fill in your exact controller below)
+- Hardware Availability: Handwired build (no PCB). Controller and parts can be sourced from common electronics/keyboard stores.
 
-    make handwired/damian1:default
+## Design
 
-Flashing example for this keyboard:
+- **Layout**: Custom layout designed from scratch (key positions, spacing, and overall arrangement).
+- **Enclosure**: Fully custom **3D-printed case** designed by me, including internal mounts and cable routing.
 
-    make handwired/damian1:default:flash
+3D files (STL/STEP): please write directly to me.
 
-See the [build environment setup](https://docs.qmk.fm/#/getting_started_build_tools) and the [make instructions](https://docs.qmk.fm/#/getting_started_make_guide) for more information. Brand new to QMK? Start with our [Complete Newbs Guide](https://docs.qmk.fm/#/newbs).
+## How this keyboard was built
 
-## Bootloader
+1. **Layout**
+   - Chosen layout and key count.
+   - Defined the matrix size (rows/columns) to minimize wiring.
 
-Enter the bootloader in 3 ways:
+2. **Electronics**
+   - Used a microcontroller supported by QMK (example: Pro Micro / Elite-C / RP2040-based controller).
+   - Added **one diode per switch** for proper matrix scanning and to prevent ghosting.
 
-* **Bootmagic reset**: Hold down the key at (0,0) in the matrix (usually the top left key or Escape) and plug in the keyboard
-* **Physical reset button**: Briefly press the button on the back of the PCB - some may have pads you must short instead
-* **Keycode in layout**: Press the key mapped to `QK_BOOT` if it is available
+3. **Wiring the matrix**
+   - Each switch connects a **row** wire to a **column** wire.
+   - Diodes are installed consistently in one direction across the whole keyboard.
+   - Rows/columns are connected to the controller pins defined in `config.h`.
+
+4. **QMK integration**
+   - Created the keyboard folder: `keyboards/handwired/damian1/`
+   - Added/edited the standard QMK files (depending on your setup):
+     - `keyboard.json` or `info.json` (layout / metadata)
+     - `config.h` (matrix pins, diode direction, etc.)
+     - `rules.mk` (features, MCU settings)
+     - `keymaps/default/keymap.c` (default keymap)
+
+## Hardware details (fill in)
+
+- Controller: *(RP2040)*
+- Diodes: *(1N4148)*
+- Matrix: *(e.g., 5 rows x 14 columns)*
+- Diode Direction in QMK: *(e.g., COL2ROW or ROW2COL)*
+- Notes: *(The whole keyboard was wired using copper wire and heat shrink tubing. The diodes were soldered to copper wire in rows, and columns were directly soldered to the switches. )*
+
+## Building the firmware
+
+After setting up your QMK build environment, build with:
+
+```bash
+qmk compile -kb handwired/damian1 -km default
+
+Or using make:
+
+make handwired/damian1:default
+
+Flashing
+
+qmk flash -kb handwired/damian1 -km default
+
+Or using make:
+
+make handwired/damian1:default:flash
+
+See the QMK docs for setup and build instructions:
+
+    Build tools setup: https://docs.qmk.fm/#/getting_started_build_tools
+
+    Make guide: https://docs.qmk.fm/#/getting_started_make_guide
+
+    Newbs guide: https://docs.qmk.fm/#/newbs
+
