@@ -43,11 +43,13 @@ A handwired QMK keyboard built with a simple row/column matrix (wires + diodes) 
 
 ## Hardware details
 
-- Controller: *(RP2040)*
-- Diodes: *(1N4148)*
-- Matrix: *(5 rows x 14 columns)*
-- Diode Direction in QMK: *(ROW2COL)*
-- Notes: *(The whole keyboard was wired using copper wire and heat shrink tubing. The diodes were soldered to copper wire in rows, and columns were directly soldered to the switches. )*
+- Controller: *RP2040-Zero*
+- Switches: *MX Cherry Silent Red*
+- Diodes: *1N4148*
+- Keycaps: *Nuphy Gem Keycaps mSA Double-shot PBT*
+- Matrix: *5 rows x 14 columns*
+- Diode Direction in QMK: *ROW2COL*
+- Notes: *The whole keyboard was wired using copper wire and heat shrink tubing. The diodes were soldered to copper wire in rows, and columns were directly soldered to the switches. *
 
 ## Building the firmware
 
@@ -77,5 +79,8 @@ See the QMK docs for setup and build instructions:
     Newbs guide: https://docs.qmk.fm/#/newbs
 
 
+```
+## Overal feeling
 
+Before assebling the keyboard I personally lubed every switch, which changed the switch sound. The Cherry MX Silent Red has a hearable spring, which can be annoying, and after lubing the switches, the keyboard is almost soundless and has a very nice feel when typing. 
 
