@@ -6,24 +6,6 @@
 A handwired QMK keyboard built with a simple row/column matrix (wires + diodes) and a microcontroller running QMK firmware.
 
 - Keyboard Maintainer: [Damian](https://github.com/demkoz)
-<<<<<<< HEAD
-- Hardware Supported: Handwired matrix + a QMK-supported controller (fill in your exact controller below)
-- Hardware Availability: Handwired build (no PCB). Controller and parts can be sourced from common electronics/keyboard stores.
-
-## Design
-
-- **Layout**: Custom layout designed from scratch (key positions, spacing, and overall arrangement).
-- **Enclosure**: Fully custom **3D-printed case** designed by me, including internal mounts and cable routing.
-
-3D files (STL/STEP): please write directly to me.
-
-## How this keyboard was built
-
-1. **Layout**
-   - Chosen layout and key count.
-   - Defined the matrix size (rows/columns) to minimize wiring.
-
-=======
 - Hardware Supported: Handwired matrix + a QMK-supported controller RP2040-Zero
 - Hardware Availability: Handwired build (no PCB). Controller and parts can be sourced from common electronics/keyboard stores.
 
@@ -42,7 +24,6 @@ A handwired QMK keyboard built with a simple row/column matrix (wires + diodes) 
    - Chosen layout and key count.
    - Defined the matrix size (rows/columns) to minimize wiring.
 
->>>>>>> refs/remotes/origin/main
 2. **Electronics**
    - Used a microcontroller supported by QMK (example: Pro Micro / Elite-C / RP2040-based controller).
    - Added **one diode per switch** for proper matrix scanning and to prevent ghosting.
@@ -60,15 +41,6 @@ A handwired QMK keyboard built with a simple row/column matrix (wires + diodes) 
      - `rules.mk` (features, MCU settings)
      - `keymaps/default/keymap.c` (default keymap)
 
-<<<<<<< HEAD
-## Hardware details (fill in)
-
-- Controller: *(RP2040)*
-- Diodes: *(1N4148)*
-- Matrix: *(e.g., 5 rows x 14 columns)*
-- Diode Direction in QMK: *(e.g., COL2ROW or ROW2COL)*
-- Notes: *(The whole keyboard was wired using copper wire and heat shrink tubing. The diodes were soldered to copper wire in rows, and columns were directly soldered to the switches. )*
-=======
 ## Hardware details
 
 - Controller: *RP2040-Zero*
@@ -78,7 +50,6 @@ A handwired QMK keyboard built with a simple row/column matrix (wires + diodes) 
 - Matrix: *5 rows x 14 columns*
 - Diode Direction in QMK: *ROW2COL*
 - Notes: *The whole keyboard was wired using copper wire and heat shrink tubing. The diodes were soldered to copper wire in rows, and columns were directly soldered to the switches. *
->>>>>>> refs/remotes/origin/main
 
 ## Building the firmware
 
@@ -106,13 +77,11 @@ See the QMK docs for setup and build instructions:
     Make guide: https://docs.qmk.fm/#/getting_started_make_guide
 
     Newbs guide: https://docs.qmk.fm/#/newbs
-<<<<<<< HEAD
-=======
 
 
 ```
 ## Overal feeling
 
 Before assebling the keyboard I personally lubed every switch, which changed the switch sound. The Cherry MX Silent Red has a hearable spring, which can be annoying, and after lubing the switches, the keyboard is almost soundless and has a very nice feel when typing. 
->>>>>>> refs/remotes/origin/main
+
 
