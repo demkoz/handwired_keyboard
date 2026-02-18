@@ -43,8 +43,8 @@ A handwired QMK keyboard built with a simple row/column matrix (wires + diodes) 
 
 - Controller: *(RP2040)*
 - Diodes: *(1N4148)*
-- Matrix: *(e.g., 5 rows x 14 columns)*
-- Diode Direction in QMK: *(e.g., COL2ROW or ROW2COL)*
+- Matrix: *(5 rows x 14 columns)*
+- Diode Direction in QMK: *(ROW2COL)*
 - Notes: *(The whole keyboard was wired using copper wire and heat shrink tubing. The diodes were soldered to copper wire in rows, and columns were directly soldered to the switches. )*
 
 ## Building the firmware
@@ -73,4 +73,5 @@ See the QMK docs for setup and build instructions:
     Make guide: https://docs.qmk.fm/#/getting_started_make_guide
 
     Newbs guide: https://docs.qmk.fm/#/newbs
+
 
